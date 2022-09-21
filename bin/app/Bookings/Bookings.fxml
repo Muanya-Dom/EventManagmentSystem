@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="acpBookings" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Bookings.BookingsController">
+   <children>
+      <TableView fx:id="bookingTable" layoutY="42.0" prefHeight="338.0" prefWidth="1000.0">
+        <columns>
+            <TableColumn fx:id="BookingID" prefWidth="171.0" text="Booking ID" />
+          <TableColumn fx:id="EventID" prefWidth="176.0" text="Event ID" />
+            <TableColumn fx:id="Title" prefWidth="341.6666564941406" text="Title" />
+            <TableColumn fx:id="BookingDate" prefWidth="169.0" text="Booking Date" />
+            <TableColumn fx:id="NoOfSpace" prefWidth="144.33331298828125" text="No of Space" />
+        </columns>
+      </TableView>
+      <Button layoutX="435.0" layoutY="390.0" mnemonicParsing="false" onAction="#update" styleClass="buttonStyle" stylesheets="@../CSS/app.css" text="Update" />
+      <Button layoutX="515.0" layoutY="390.0" mnemonicParsing="false" onAction="#delete" styleClass="buttonStyle" stylesheets="@../CSS/app.css" text="Delete" />
+      <Label layoutX="12.0" layoutY="8.0" text="My Booking">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

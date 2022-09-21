@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="acpEvents" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="984.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Events.EventsController">
+   <children>
+      <TableView fx:id="eventsTable" layoutX="7.0" layoutY="66.0" prefHeight="342.0" prefWidth="973.0" style="-fx-background-color: White;" AnchorPane.rightAnchor="6.0" AnchorPane.topAnchor="66.0">
+        <columns>
+          <TableColumn fx:id="eventid" prefWidth="173.0" text="Event ID" />
+          <TableColumn fx:id="title" prefWidth="222.0" text="Title" />
+            <TableColumn fx:id="date" prefWidth="181.0" text="Date" />
+            <TableColumn fx:id="time" prefWidth="184.0" text="Time" />
+            <TableColumn fx:id="noOfSpaceAvailable" minWidth="0.0" prefWidth="212.0" text="No of Space Available" />
+        </columns>
+      </TableView>
+      <Text layoutX="388.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="See All Events" textAlignment="CENTER" wrappingWidth="208.6708984375">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="107.0" fitWidth="235.0" layoutX="20.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/events_upcoming.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="77.0" fitWidth="209.0" layoutX="774.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/events_logo.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="451.0" layoutY="415.0" mnemonicParsing="false" onAction="#bookEvent" styleClass="buttonStyle" stylesheets="@../CSS/app.css" text="Book Event" />
+   </children>
+</AnchorPane>
